@@ -1,14 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integración Cryptomus</title>
+    <title>Compra Productos - Integración Cryptomus</title>
     <meta name="cryptomus" content="fdf177c1" />
-</head>
-<body>
-    <h1>Bienvenido</h1>
-    <p>Esta es una página simple para la integración con Cryptomus.</p>
-</body>
-</html>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .product img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+        }
+
+        .product-details {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bienvenido a nuestra Tienda</h1>
+        <p>Compra productos fácilmente y paga de manera segura</p>
+    </header>
+
+    <div class="container">
+        <h2>Productos Disponibles</h2>
+
+        <!-- Producto 1 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/80" alt="Producto 1">
+            <div class="product-details">
+                <h3>Producto A</h3>
+                <p>Descripción breve del producto A.</p>
+                <p class="product-price">$19.99</p>
+            </div>
+            <button class="btn" onclick="generarUrlPago()">Pagar con Cryptomus</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/80" alt="Producto 2">
+            <div class="product-details">
+                <h3>Producto B</h3>
+                <p>Descripción breve del producto B.</p>
+                <p class="product-price">$29.99</p>
+            </div>
+            <button class="btn" onclick="generarUrlPago()">Pagar con Cryptomus</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Tu Empresa. Todos los derechos reservados.</p>
+    </div>
+
+    <script>
+        // Función JavaScript para simular la generación de la URL de pago
+        function generarUrlPago() {
+            // Simulación de generación de URL de pago
+            alert("Generando URL de pago con Cryptomus...");
+            
+            // Aquí deberías agregar la lógica para integrar Cryptomus y generar el enlace real.
+            // Este es solo un ejemplo que muestra un mensaje al usuario.
+
+            setTimeout(function () {
+                alert("Pago generado correctamente. Puedes proceder con el pago.");
+            }, 2000); // Espera 2 segundos antes de mostrar el siguiente mensaje
+        }
+    </script>
+
+</body>
+
+</html>
